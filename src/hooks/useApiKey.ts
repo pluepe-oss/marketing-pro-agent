@@ -24,7 +24,7 @@ export function loadApiKeySession(): string | null {
   }
 }
 
-function saveApiKeySession(key: string) {
+export function saveApiKeySession(key: string) {
   const session: StoredSession = {
     key,
     expiresAt: Date.now() + SESSION_DURATION,
